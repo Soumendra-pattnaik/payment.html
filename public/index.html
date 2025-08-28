@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Notes & Tasks</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Notes & Tasks</div>
+    <div class="user-area">
+      <span id="user-name"></span>
+      <button id="signout">Sign out</button>
+    </div>
+  </header>
+  <main class="container">
+    <section class="panel">
+      <h2>Notes</h2>
+      <form id="note-form" class="row">
+        <input id="note-title" placeholder="Title" required />
+        <textarea id="note-content" placeholder="Write a note..." required></textarea>
+        <button type="submit">Add Note</button>
+      </form>
+      <div id="notes-list" class="list"></div>
+    </section>
+    <section class="panel">
+      <h2>Tasks</h2>
+      <form id="task-form" class="row">
+        <input id="task-title" placeholder="New task..." required />
+        <button type="submit">Add Task</button>
+      </form>
+      <div id="tasks-list" class="list"></div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
+
